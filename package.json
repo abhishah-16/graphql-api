@@ -16,6 +16,7 @@
   "dependencies": {
     "apollo-server": "^3.10.2",
     "graphql": "^16.6.0",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "uuid": "^9.0.0"
   }
 }

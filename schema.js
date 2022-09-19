@@ -24,12 +24,25 @@ const typeDefs = gql`
         slug: String!
         animals:[Animal!]!
     }
-    type Query{
+    type Query {
         maincards: [MainCard]!
         animals: [Animal!]!
         animal(slug:String!): Animal
         categories: [Category!]!
         category(slug: String!): Category
+    }
+    type Mutation {
+        addAnimal(
+        image: String!
+        title: String!
+        rating: Float!
+        price: String!
+        description: [String!]!
+        slug: String!
+        stock: Int!
+        onSale: Boolean!
+        category: String!
+        ): Animal
     }
 `
 
